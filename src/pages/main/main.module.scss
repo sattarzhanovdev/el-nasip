@@ -1,0 +1,58 @@
+.container{
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .left__content{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .logo{
+        img{
+          width: 100px;
+        }
+      }
+      .btns{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        gap: 20px;
+
+        button{
+          width: 250px;
+          height: 50px;
+          border-radius: 10px;
+          border: 0;
+          color: white;
+          font-family: 'montserrat';
+          font-weight: 500;
+          font-size: 12px;
+          
+          &:nth-child(1){
+            background: #FF8F28;
+          }
+          &:nth-child(2){
+            background: #8728FF;
+          }
+          &.off{
+            background: red;
+          }
+        }
+      }
+    }
+
+    .right__content{
+      img{
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+  }
+}

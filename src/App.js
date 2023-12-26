@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { MainRoutes } from './routes'
+import './App.scss'
+import axios from 'axios'
+import { API } from './api'
+
+axios.defaults.baseURL = 'https://el-nasip-default-rtdb.asia-southeast1.firebasedatabase.app'
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MainRoutes />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
