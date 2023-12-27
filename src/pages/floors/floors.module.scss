@@ -33,6 +33,7 @@
     flex-direction: column;
     
     .btns{
+      max-width: 400px;
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
