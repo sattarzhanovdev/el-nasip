@@ -48,26 +48,15 @@ const Floors = () => {
                     'j' :
                     item === 11 ?
                     'k' :
-                    item === 12 ?
-                    'l' :
                     'v  '
                   )
                   Navigate('/apartments/')
                 }}
               >
-                {item}
+                {item === 11 ? `${item} пентхаус` : item}
               </button>
             ))
           }
-          <button
-            onClick={() => {
-              localStorage.setItem('floor', 13)
-              API.putValue('m')
-              Navigate('/apartments/')
-            }}
-          >
-            Пентхаус
-          </button>
         </div>
       </div>
       <div className={c.right__content}>

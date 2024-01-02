@@ -38,14 +38,17 @@
           &:nth-child(1){
             background: #FF8F28;
           }
-          &:nth-child(2){
+          &:nth-child(3){
             background: red;
           }
-          &:nth-child(3){
+          &:nth-child(4){
             background: #8728FF;
           }
           &.off{
             background: red;
+          }
+          &.pod{
+            background: orangered;
           }
         }
       }

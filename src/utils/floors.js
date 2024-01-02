@@ -1,6 +1,6 @@
 export const FLOORS = []
 
-for( let i = 1; i <= 12; i++){
+for( let i = 1; i <= 11; i++){
   FLOORS.push(i)
 }
 

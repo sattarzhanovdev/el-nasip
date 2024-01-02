@@ -7,8 +7,13 @@ import { useNavigate } from 'react-router-dom'
 
 const Main = () => {
   const [ on, setOn ] = React.useState(false)
+  const [ on2, setOn2 ] = React.useState(false)
 
   const Navigate = useNavigate()
+  
+  React.useEffect(() => {
+    setOn2(localStorage.getItem('statusPod'))
+  }, [setOn2])
 
   return (
     <div className={c.container}>
@@ -31,6 +36,29 @@ const Main = () => {
             >
               Включить все дома
             </button>
+            {
+              on2 ?
+              <button
+                className={c.off}
+                onClick={() => {
+                  API.putValue('p')
+                  setOn2(!on2)
+                  localStorage.setItem('statusPod', on2)
+                }}
+              >
+                Выключить подъезд
+              </button> :
+              <button
+                className={c.pod}
+                onClick={() => {
+                  API.putValue('P')
+                  setOn2(!on2)
+                  localStorage.setItem('statusPod', on2)
+                }}
+              >
+                Включить подъезд
+              </button>
+            }
             <button
               className={c.off}
               onClick={() => {
