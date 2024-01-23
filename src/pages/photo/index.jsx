@@ -24,13 +24,13 @@ const Photo = () => {
             floor <= 11 ? 
           
               id === 1 ?
-              ApartmentsPhotos.first :
+              ApartmentsPhotos.third :
               id === 2 ?
               ApartmentsPhotos.second :
               id === 3 ?
-              ApartmentsPhotos.third :
-              id === 4 ?
               ApartmentsPhotos.fourth :
+              id === 4 ?
+              ApartmentsPhotos.first :
               ''
 
             :
@@ -38,25 +38,25 @@ const Photo = () => {
             floor === 12 ? 
 
               id === 1 ?
-              ApartmentsPhotos.first12 :
+              ApartmentsPhotos.third12 :
               id === 2 ?
               ApartmentsPhotos.second12 :
               id === 3 ?
-              ApartmentsPhotos.third12 :
-              id === 4 ?
               ApartmentsPhotos.fourth12 :
+              id === 4 ?
+              ApartmentsPhotos.first12 :
               ''
 
             :
             
               id === 1 ?
-              ApartmentsPhotos.firstPent :
+              ApartmentsPhotos.thirdPent :
               id === 2 ?
               ApartmentsPhotos.secondPent :
               id === 3 ?
-              ApartmentsPhotos.thirdPent :
-              id === 4 ?
               ApartmentsPhotos.fourthPent :
+              id === 4 ?
+              ApartmentsPhotos.firstPent :
               ''
           }
           alt=""
