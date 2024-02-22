@@ -3,7 +3,7 @@ import { MainRoutes } from './routes'
 import './App.scss'
 import axios from 'axios'
 
-axios.defaults.baseURL = 'https://el-nasip-default-rtdb.asia-southeast1.firebasedatabase.app'
+axios.defaults.baseURL = 'https://el-nasi-default-rtdb.asia-southeast1.firebasedatabase.app/'
 
 function App() {
   return (
